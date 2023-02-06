@@ -11,3 +11,10 @@ $(document).ready
     $(this).find('span').css({top:y,left:x})
   })
 })
+$(function() {
+  var zIndexNumber = 1000;
+  $("details").each(function() {
+          $(this).css('zIndex', zIndexNumber);
+          zIndexNumber -= 10;
+  });
+});
